@@ -169,8 +169,13 @@ strong {
     }
 
     .presentacion__imagen {
-        width: auto;
+        width: 80%;
     }
 
+    .imagen_Juan_Derek
+    {
+        width: 80%;
+    }
 }
+
 
