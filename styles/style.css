@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario: #FF2E63 ;
+    --color-secundario: #3F72AF ;
+    --color-terciario: #F2EDD1 ;
+    --color-fondo: #222831 ;
+    --color-texto: #F9CB99 ;
+    --color-texto-secundario: #689B8A ;
+    --color-footer: #280A3E ;
+
+    --fuente-principal: 'Montserrat', sans-serif;
+    --fuente-secundaria: 'Krona One', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+    
+}
+
+.header__menu__link {
+    font-size: 1.5rem;
+    font-family: var(--fuente-principal);
+    font-weight: 600;
+    color:var(--color-secundario);
+    text-decoration: none;
+}
+
+strong {
+    color: var(--color-primario);
+}
+
+.Titulo-Estaque {
+    color: var(--color-secundario) ;
+}
+
+.presentacion__contenido__parrafo {
+    color: var(--color-texto-secundario);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: var(--fuente-principal);
+    font-size: 20px;
+    width: 50%;
+
+}
+
+.presentacion__contenido {
+    padding: 6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+     
+}
+
+.presentacion__texto {
+    width: 50%;
+    font-family: var(--fuente-secundaria);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion__contenido__titulo {
+    font-size: 2.25rem;
+}
+
+.presentacion__contenido__redes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.subtitulos__enlaces {
+    font-family: var(--fuente-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-primario);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.redes__icono {
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0px;
+    font-family: var(--fuente-principal);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: 2px solid #22D4FD;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.redes__icono:hover {
+    background-color:var(--color-primario);
+    color: #FFFFFF;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.presentacion__imagen {
+    width: 50%;
+    
+}
+
+.imagen_Juan_Derek {
+    width: 50%;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.footer {
+    background-color: var(--color-footer);
+    color: var(--color-texto);
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    font-family: var(--fuente-principal);
+    font-size: 1.5rem;   
+    font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+    
+    .header {
+        padding: 10%;
+    }
+
+    .presentacion__contenido {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentacion__texto
+    {
+        width: auto;
+    }
+
+    .presentacion__contenido__parrafo 
+    {
+        width: auto;
+    }
+
+}
